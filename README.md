@@ -7,9 +7,11 @@
 - Appliquez PSR-2 (http://www.php-fig.org/psr/psr-2/) Utilisez une extension à votre logiciel favori pour valider votre code à la volée. Pour Sublime 3 : utilisez «Phpcs».
 - Sublime Text 3 est conseillé pour coder (mais tout éditeur est accepté)
  - Une configuration tuné pour php (extensions et configuration spécifique) sera prochainement proposée
+ - Utilisez les snipets et l'autocomplétion
 - Utilisez les conventions de Naoned :
  - Pas de tabulation, indentation de 4 espaces (2 pour le html et le twig)
  - Classe, méthodes, variables, arguments en camelCase
+ - 120 caractères par ligne
 - Mettre en place de la revue de code par l’utilisation de pull requests (http://blog.octo.com/revue-de-code-quel-format-choisir/)
 - Écrire les tests en même temps que le code (à definir)
 - Autre inspiration, les conventions de symfony : http://symfony.com/fr/doc/current/contributing/code/standards.html
@@ -71,7 +73,7 @@
 - Dépendre des choses qui changent le moins souvent
 - DRY − Programmer du code réutilisable
 - Vous ne pouvez pas savoir *ce qui va changer*, mais vous pouvez être sûr que cela **va changer**.
-- «Le design est plus l'art de conserver de la flexibilité que celui d'atteindre la perfection."
+- «La conception est plus l'art de conserver de la flexibilité que celui d'atteindre la perfection."
 
 ## Être responsable
 
