@@ -4,17 +4,19 @@
 
 ## Coder avec les standards
 
-- Appliquez PSR-2 (http://www.php-fig.org/psr/psr-2/) Utilisez une extension à votre logiciel favori pour valider votre code à la volée. Pour Sublime 3 : utilisez «Phpcs».
-- Sublime Text 3 est conseillé pour coder (mais tout éditeur est accepté)
- - Une configuration tuné pour php (extensions et configuration spécifique) sera prochainement proposée
- - Utilisez les snipets et l'autocomplétion
+- Appliquez PSR-2 (http://www.php-fig.org/psr/psr-2/)
+- Utilisez un bon éditeur extensible (Sublime Text 3, phpStorm)
+ - Utilisez des extensions et des fonctionnalités qui simplifient la vie : PHPCS pour le PSR-2, Git, Manipulation de fichier, autocompletion, PHPDoc …
 - Utilisez les conventions de Naoned :
  - Pas de tabulation, indentation de 4 espaces (2 pour le html et le twig)
  - Classe, méthodes, variables, arguments en camelCase
  - 120 caractères par ligne
+
+## Éprouver son code
+
 - Mettre en place de la revue de code par l’utilisation de pull requests (http://blog.octo.com/revue-de-code-quel-format-choisir/)
 - Écrire les tests en même temps que le code (à definir)
-- Autre inspiration, les conventions de symfony : http://symfony.com/fr/doc/current/contributing/code/standards.html
+- Faite l’expercience du pair-coding : coder à 4 mains et 2 cervaux
 
 ## Git et le versionning
 
@@ -45,6 +47,9 @@
 
 ## Ecrire du code pour les autres
 
+- Utilisez PHPDoc http://fr.wikipedia.org/wiki/PHPDoc
+- Un bon code, c’est comme une bonne blague… il n’a pas besoin d’explication.
+- En commentaire, précisez «pourquoi» une action est faite, plutôt que «comment»
 - Vous lirez plus de code que vous n’en produirez
 - Préférez être clair plutôt qu’être brèf
 - Exposer uniquement ce qui est vraiment nécessaire et le faire explicitement (méthode privées)
@@ -67,6 +72,7 @@
 - Ne pas utiliser des fonctions de programmation fantaisiste *juste parce que vous en êtes capable*. Utilisez les fonctions de programmation fantaisiste parce qu'ils ont un **avantage démontrable** spécifique pour le problème que vous essayez de résoudre.
 - Toujours fournir un cas d'utilisation concret avec une spécification
 - Savoir quand (ne pas) optimiser
+- Logguer votre code pour retracer les actions utilisateurs et débusqué les bugs
 
 ## Concevoir le changement
 
@@ -74,6 +80,8 @@
 - DRY − Programmer du code réutilisable
 - Vous ne pouvez pas savoir *ce qui va changer*, mais vous pouvez être sûr que cela **va changer**.
 - «La conception est plus l'art de conserver de la flexibilité que celui d'atteindre la perfection."
+- Séparer les responsabilités au maximum, une fonction ne fait qu’une seule chose, mais elle la fait bien. Une classe ne traite que d’un objet, mais elle le fait bien.
+- Standardiser les échanger. Une méthode ou une fonction doit toujours renvoyer un même type de résultat.
 
 ## Être responsable
 
@@ -103,9 +111,10 @@
 - Une compétition s’offre à tous : débusquer les pires algorithmes et les plus vilaines tournure de code ! L’occasion de se faire payer un coup par le lauréat, et de aussi de rire un peu, sans tomber dans le lynchage bien sûr ! Modalités à venir.
 
 ---
-Inspirations and credits:
+Inspirations et crédits:
 
 - https://signalvnoise.com/posts/3250-clarity-over-brevity-in-variable-and-method-names
 - http://blog.codinghorror.com/kiss-and-yagni/
 - http://www.articpost.com/best-programming-quotes-that-every-developer-should-know/
 - https://github.com/iadvize/guidelines
+- http://symfony.com/fr/doc/current/contributing/code/standards.html
