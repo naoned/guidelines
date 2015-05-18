@@ -1,7 +1,5 @@
 # Développer chez Naoned
 
-/!\ Ce document est pour le moment dans le statut «brouillon de travail», associé à plusieurs travaux en cours.
-
 ## Coder avec les standards
 
 - Appliquez PSR-2 (http://www.php-fig.org/psr/psr-2/)
