@@ -9,6 +9,7 @@
  - Pas de tabulation, indentation de 4 espaces (2 pour le html et le twig)
  - Classe, méthodes, variables, arguments en camelCase
  - 120 caractères par ligne
+ - Noms des repo Github en dash-separated et sans majuscule
 
 ## Éprouver son code
 
