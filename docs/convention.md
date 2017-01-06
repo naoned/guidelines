@@ -82,6 +82,7 @@ class Unicorn extends Pony implements Ridable
             }
         }
 
+        // Always leave a blank line before return or throw
         return null;
     }
 
@@ -140,6 +141,7 @@ class Unicorn extends Pony implements Ridable
 ```
 
 ## Mise en forme
+ * camelCase pour les variables et les méthodes, studlyCaps pour les classes, interfaces et traits
  * Accolades sur la ligne suivante (à l'exception des fonctions anonymes)
  * Espaces autour des opérateurs (y compris l'opérateur de concaténation .)
  * Ecrire true, false, null et autres mots clé en minuscules
