@@ -206,7 +206,7 @@ if($log instanceof Logger)
  * Ne pas utiliser les alias (use X as Y)
  * Utilisation de [PSR-4](http://www.php-fig.org/psr/psr-4/)
 
-## Code smell
+## Code smells
 Eléments qui doivent vous interpeller et vous inciter à trouver une meilleure solution (vrai à 90%)
 
  * else (de surcroît si on en enchaîne plusieurs)
