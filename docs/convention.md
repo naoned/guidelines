@@ -221,6 +221,9 @@ Eléments qui doivent vous interpeller et vous inciter à trouver une meilleure 
 ```php
 <?php
  
+// Test class must be in the same namespace than tested class
+namespace Naoned\Ponies;
+ 
 class UnicornTest extends PHPUnit_Framework_TestCase
 {
     private
