@@ -231,7 +231,10 @@ class UnicornTest extends PHPUnit_Framework_TestCase
  
     protected function setUp()
     {
-        $this->unicorn();
+        $this->unicorn = new Unicorn(
+            new Owner(),
+            []
+        );
     }
  
     /**
