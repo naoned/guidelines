@@ -251,14 +251,14 @@ class UnicornTest extends PHPUnit_Framework_TestCase
     // name is always provider<TestMethodName>
     public function providerTestIsRainbowCompatible()
     {
-        return array(
+        return [
             // Explicit names is better than numerical index based names
-            'colored type #1' => array('Shrek', true),    
-            'colored type #2' => array('The Flash', true),    
-            'non existing type' => array('Bouffifre', false),    
-            'approximating type' => array('Cetailem', false),    
-            'mixed type' => array('Smurf', true),    
-        );
+            'colored type #1' => ['Shrek', true],    
+            'colored type #2' => ['The Flash', true],    
+            'non existing type' => ['Bouffifre', false],    
+            'approximating type' => ['Cetailem', false],    
+            'mixed type' => ['Smurf', true],    
+        ];
     }
 }
 ```
