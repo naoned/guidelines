@@ -43,6 +43,9 @@ class Unicorn extends Pony implements Ridable
         $saddle,
         $options;
 
+    // wait ... where is the PHPDoc ? 
+    // ok let's forget the PHPDoc, it isn't worth it.
+    // Improve naming instead
     public function __construct(User $owner, array $options = array())
     {
         $this->owner = $owner;
@@ -134,6 +137,15 @@ class Unicorn extends Pony implements Ridable
         return $this->owner->execute($action);
     }
 
+    public function initOptions(): void
+    {
+        $this->options = [
+            'foo' => 42,
+            'barOrAnotherLongName' => 'wolf', // Do not align with spaces !
+            'bazz' => null,  // Trailing comma improves diff readability
+        ];
+    }
+
     public static function sometimesAStaticMethodCanBeCorrect()
     {
     }
@@ -141,15 +153,23 @@ class Unicorn extends Pony implements Ridable
 ```
 
 ## Mise en forme
- * camelCase pour les variables et les méthodes, studlyCaps pour les classes, interfaces et traits
  * Accolades sur la ligne suivante (à l'exception des fonctions anonymes)
  * Espaces autour des opérateurs (y compris l'opérateur de concaténation .)
  * Ecrire true, false, null et autres mots clé en minuscules
- * Code en anglais **à l'exception du vocabulaire du métier (et uniquement lui)**
  * Utiliser le [type hinting](http://www.php.net/manual/fr/language.oop5.typehinting.php) à chaque fois que c'est possible
  * Utiliser le type hinting pour [les retours de méthode](http://php.net/manual/fr/functions.returning-values.php#functions.returning-values.type-declaration) pour les projets en PHP >= 7.0
  * Utiliser [les types nullables](http://php.net/manual/fr/migration71.new-features.php#migration71.new-features.nullable-types) pour les projets en PHP >= 7.1
  * Proscrire l'utilisation des opérateurs ternaires
+
+## Nommage
+ * camelCase pour les variables et les méthodes, studlyCaps pour les classes, interfaces et traits
+ * Code en anglais **à l'exception du vocabulaire du métier (et uniquement lui)**
+ * Proscrire les suffixes suivants : *Interface*, *Trait*, *Exception* qui empêchent de se poser les bonnes questions en terme de nommage
+ * Eviter les noms trop génériques comme *Manager*, *Processor*, *Smart*, ...
+
+## Commentaires
+ * La PHPDoc est à éviter : chère à maintenir, donne l'illusion de la qualité, détourne le développeur des vrais enjeux comme le nommage ou le type hinting.
+ * Les commentaires doivent être rares et utilisés uniquement quand cela n'est pas possible de faire autrement. Chaque fois que vous souhaitez écrire un commentaire, interdisez vous le faire et cherchez plutôt à rendre le code plus explicite (pour que le commentaire devienne inutile).
 
 ## Usage général
  * Programmation orientée objet (voir chapitre dédié plus bas)
