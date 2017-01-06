@@ -215,3 +215,44 @@ Eléments qui doivent vous interpeller et vous inciter à trouver une meilleure 
  * propriétés privées avec un getter ET un setter
  * classes 100% (ou presque) publiques
  * classes 100% (ou presque) statiques
+
+## Test unitaire : exemple
+
+```php
+<?php
+ 
+class UnicornTest extends PHPUnit_Framework_TestCase
+{
+    private
+        $unicorn;
+ 
+    protected function setUp()
+    {
+        $this->unicorn();
+    }
+ 
+    /**
+     * @dataProvider providerTestIsRainbowCompatible()
+     */
+    public function testIsRainbowCompatible(string $unicornType, bool $expected)
+    {
+        $result = $this->burger->isRainbowCompatible($unicornType);
+ 
+        $this->assertSame($expected, $result);
+    }
+ 
+    // provider always follows the test method
+    // name is always provider<TestMethodName>
+    public function providerTestIsRainbowCompatible()
+    {
+        return array(
+            // Explicit names is better than numerical index based names
+            'colored type #1' => array('Shrek', true),    
+            'colored type #2' => array('The Flash', true),    
+            'non existing type' => array('Bouffifre', false),    
+            'approximating type' => array('Cetailem', false),    
+            'mixed type' => array('Smurf', true),    
+        );
+    }
+}
+```
