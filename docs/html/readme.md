@@ -184,7 +184,7 @@ The currency symbol for the Euro is “€”.
 
 On ne fait pas de JS dans le HTML. Ca n'est pas une bonne pratique et çà peut réduire la lisibilité du code en cas d'abus.
 
-`onvlue`, `onchange`, `onclick`, etc...
+`onchange`, `onclick`, etc...
 
 ```html
 <!-- Bad -->
