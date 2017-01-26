@@ -50,7 +50,7 @@ class Unicorn extends Pony implements Ridable
     {
         $this->owner = $owner;
 
-        // Never initialized properties in declaration, use constructor for it
+        // Never initialize properties in declaration, use constructor instead
         $this->breeder = new NullBreeder();
         $this->rider = null;
         $this->saddle = null;
@@ -169,7 +169,7 @@ class Unicorn extends Pony implements Ridable
 
 ## Commentaires
  * La PHPDoc est à éviter : chère à maintenir, donne l'illusion de la qualité, détourne le développeur des vrais enjeux comme le nommage ou le type hinting.
- * Les commentaires doivent être rares et utilisés uniquement quand cela n'est pas possible de faire autrement. Chaque fois que vous souhaitez écrire un commentaire, interdisez vous le faire et cherchez plutôt à rendre le code plus explicite (pour que le commentaire devienne inutile).
+ * Les commentaires doivent être rares et utilisés uniquement quand cela n'est pas possible de faire autrement. Chaque fois que vous souhaitez écrire un commentaire, interdisez vous de le faire et cherchez plutôt à rendre le code plus explicite (pour que le commentaire devienne inutile).
 
 ## Usage général
  * Programmation orientée objet (voir chapitre dédié plus bas)
@@ -241,7 +241,7 @@ Eléments qui doivent vous interpeller et vous inciter à trouver une meilleure 
 ```php
 <?php
  
-// Test class must be in the same namespace than tested class
+// Test class must be in the same namespace as the tested class
 namespace Naoned\Ponies;
  
 class UnicornTest extends PHPUnit_Framework_TestCase
@@ -272,7 +272,7 @@ class UnicornTest extends PHPUnit_Framework_TestCase
     public function providerTestIsRainbowCompatible()
     {
         return [
-            // Explicit names is better than numerical index based names
+            // Explicit names are better than numerical index based names
             'colored type #1' => ['Shrek', true],    
             'colored type #2' => ['The Flash', true],    
             'non existing type' => ['Bouffifre', false],    
