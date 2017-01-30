@@ -1,0 +1,39 @@
+<script>
+const tryCatch = function (fn) {
+  try {
+    fn()
+  } catch(e) {
+    console.error(e.message);
+  }
+}
+
+tryCatch(()=> foo());
+
+tryCatch(() => foobar());
+
+tryCatch(() => foobarInner());
+
+tryCatch(() => teapot());
+
+const foo = function() {
+  console.log('foo');
+  console.pouet();
+}
+
+const foobar = function foobarInner() {
+  console.log('foobar');
+  console.pouet();
+}
+
+function teapot() {
+  console.log('teapot');
+}
+
+foobarInner();
+
+tryCatch(() => console.log(yop));
+tryCatch(() => console.log(tipi));
+
+var yop = 'yop';
+let tipi = 'tipi';
+</script>
