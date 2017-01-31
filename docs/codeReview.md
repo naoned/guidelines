@@ -8,7 +8,7 @@
 * Respecter la convention de nommage des branches
 * Pas de push force pendant la phase de relecture
 * Push force **APRES** validation et **AVANT** merge pour nettoyer l’historique (enlever notamment les A/R relecture/fixes)
-* Merge des pull requests sur github en mode squash (pour éviter les commits de merge)
+* Pas de commits de merge via l'interface pour préserver un historique propre (utiliser squash ou rebase selon les cas)
 
 ## Guide du relecteur
 
