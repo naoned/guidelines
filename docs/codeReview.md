@@ -27,6 +27,14 @@
 * Lisibilité
   * Nommage des fonctions et des variables
   * Commentaires inutiles
+* Performances
+  * Dégradation du temps de traitement
+  * Volumes (requêtes sans limites, écriture fichier sans mode stream, tableau/collection stockés en mémoire...)
+* Exploitabilité
+  * Présence de logs
+  * Valeurs de configuration
+  * Pas d'écriture en direct sur le filesystem
+
 
 ## Guide du relu
 
