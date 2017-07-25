@@ -29,7 +29,7 @@ class Unicorn extends Pony implements Ridable
     use LoggerTrait;
 
     const
-        // order = public, protected, private
+        // public then protected then private
         public DEFAULT_CORN_SIZE = 42,
         private SOME_CONST = 'rainbow';
 
@@ -163,9 +163,9 @@ class Unicorn extends Pony implements Ridable
 
 ## Nommage
  * camelCase pour les variables et les méthodes, studlyCaps pour les classes, interfaces et traits
- * Code en anglais **à l'exception du vocabulaire du métier (et uniquement lui)**
+ * Code en anglais **y compris** le vocabulaire du métier
  * Proscrire les suffixes suivants : *Interface*, *Trait*, *Exception* qui empêchent de se poser les bonnes questions en terme de nommage
- * Eviter les noms trop génériques comme *Manager*, *Processor*, *Smart*, ...
+ * Eviter les noms trop génériques comme *Manager*, *Processor*, *Smart...*, ...
 
 ## Commentaires
  * La PHPDoc est à éviter : chère à maintenir, donne l'illusion de la qualité, détourne le développeur des vrais enjeux comme le nommage ou le type hinting.
